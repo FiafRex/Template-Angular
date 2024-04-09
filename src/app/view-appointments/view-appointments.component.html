@@ -1,0 +1,30 @@
+<div class="appointments-container">
+  <h2>Appointments</h2>
+  
+  <table *ngIf="appointments.length; else noAppointments">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Session Duration</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of appointments">
+        <td>{{appointment.name}}</td>
+        <td>{{appointment.gender}}</td>
+        <td>{{appointment.phone}}</td>
+        <td>{{appointment.address}}</td>
+        <td>{{appointment.sessionDuration}} day(s)</td>
+        <td>₹{{appointment.cost}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #noAppointments>
+    <p>No appointments found.</p>
+  </ng-template>
+</div>

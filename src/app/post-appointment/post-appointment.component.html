@@ -1,0 +1,43 @@
+<div class="post-appointment-container">
+  <h2>Book an Appointment</h2>
+  <form #appointmentForm="ngForm" (ngSubmit)="onSubmit(appointmentForm.value)">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="appointment.name" required>
+    </div>
+
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="appointment.gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="appointment.phone" required>
+    </div>
+
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" [(ngModel)]="appointment.address" required>
+    </div>
+
+    <div>
+      <label for="sessionDuration">Session Duration:</label>
+      <select id="sessionDuration" name="sessionDuration" [(ngModel)]="appointment.sessionDuration" (ngModelChange)="calculateCost()" required>
+        <option value="1">1 Day</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+      </select>
+    </div>
+
+    <div *ngIf="appointment.cost">
+      <p>Cost: ₹{{ appointment.cost }}</p>
+    </div>
+
+    <button type="submit" [disabled]="!appointmentForm.valid">Submit</button>
+  </form>
+</div>

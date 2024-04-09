@@ -1,0 +1,47 @@
+{
+  "appointments": [
+    {
+      "id": "bfd9",
+      "name": "RANOJ BHOWMIK",
+      "gender": "male",
+      "phone": "07439149199",
+      "address": "Room no 118,block R, VIT University VELLORE, TAMIL NADU, 632014",
+      "sessionDuration": "4",
+      "cost": 2000
+    },
+    {
+      "id": "7f61",
+      "name": "RANOJ BHOWMIKr",
+      "gender": "male",
+      "phone": "07439149199",
+      "address": "Room no 118,block R, VIT University VELLORE, TAMIL NADU, 632014",
+      "sessionDuration": "4",
+      "cost": 2000
+    },
+    {
+      "id": "8efe",
+      "name": "COL RANA BHOWMIK",
+      "gender": "male",
+      "phone": "7439149199",
+      "address": "455 LAKE GARDENS",
+      "sessionDuration": "5",
+      "cost": 5000
+    },
+    {
+      "id": "cc52",
+      "name": "RANOJ BHOWMIK",
+      "phone": "07439149199",
+      "email": "ranoj1212@gmail.com",
+      "message": "r"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "f6ef",
+      "name": "RANOJ BHOWMIK",
+      "phone": "07439149199",
+      "email": "ranoj1212@gmail.com",
+      "message": "r"
+    }
+  ]
+}
